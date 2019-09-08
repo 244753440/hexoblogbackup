@@ -19,3 +19,12 @@ https://openwrt.org/toh/start
 
 https://openwrt.org/toh/hwdata/raspberry_pi_foundation/raspberry_pi_3_bplus
 
+#### 3. 编译
+
+编译过程非常消耗时间，时间主要消耗在下载各种源码包。
+
+这里提供几个可以手动下载到源码包的网址
+
+1.  http://sources.openwrt.org/   这个网址上比较齐全，基本都能找到对应的源码包。
+2. http://openwrt.bjbook.net/download/
+3. https://gitee.com/ziguayungui/Openwrt_18.06_dl 我将自己用到的源码包上传到了码云上面，国内下载的速度比github快很多。
