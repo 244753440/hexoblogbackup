@@ -237,7 +237,7 @@
                 
               
 
-              <time title="创建时间：2019-12-15 22:22:28 / 修改时间：22:39:04" itemprop="dateCreated datePublished" datetime="2019-12-15T22:22:28+08:00">2019-12-15</time>
+              <time title="创建时间：2019-12-15 22:22:28 / 修改时间：22:54:46" itemprop="dateCreated datePublished" datetime="2019-12-15T22:22:28+08:00">2019-12-15</time>
             </span>
           
             
@@ -254,7 +254,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span>554</span>
+              <span>1.3k</span>
             </span>
           
 
@@ -299,9 +299,17 @@
 </li>
 <li><p>命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo clean		清除之前生成结果</span><br><span class="line">hexo generate	重新生成静态文件</span><br><span class="line">hexo server		运行hexo服务器，一般是http://127.0.0.1:4000/</span><br><span class="line">hexo deploy		部署</span><br><span class="line">hexo backup		备份</span><br></pre></td></tr></table></figure>
-
 </li>
 </ol>
+</li>
+<li><p>hexo deploy失败</p>
+<p>​    问题现象：</p>
+<figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">PS D:<span class="symbol">\B</span>log&gt;  hexo deploy</span><br><span class="line">INFO  Deploying: git</span><br><span class="line">INFO  Clearing .deploy_git folder...</span><br><span class="line">INFO  Copying files from public folder...</span><br><span class="line">INFO  Copying files from extend dirs...</span><br><span class="line">fatal: in unpopulated submodule '.deploy_git'</span><br><span class="line">FATAL Something's wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br><span class="line">Error: Spawn failed</span><br><span class="line">    at ChildProcess.&lt;anonymous&gt; (D:<span class="symbol">\B</span>log<span class="symbol">\n</span>ode_modules<span class="symbol">\h</span>exo-util<span class="symbol">\l</span>ib<span class="symbol">\s</span>pawn.js:52:19)</span><br><span class="line">    at ChildProcess.emit (events.js:210:5)</span><br><span class="line">    at ChildProcess.cp.emit (D:<span class="symbol">\B</span>log<span class="symbol">\n</span>ode_modules<span class="symbol">\c</span>ross-spawn<span class="symbol">\l</span>ib<span class="symbol">\e</span>noent.js:40:29)</span><br><span class="line">    at Process.ChildProcess._handle.onexit (internal/child_process.js:272:12)</span><br></pre></td></tr></table></figure>
+
+<p>​    解决方法： 删除./.deploy_git 文件夹。然后重新deploy</p>
+</li>
+<li><p>hexo backup失败</p>
+<p>PS D:\Blog&gt; git push -u origin master 方式。</p>
 </li>
 </ol>
 
@@ -784,7 +792,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">8k</span>
+    <span title="站点总字数">9k</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动</div>
   <span class="post-meta-divider">|</span>
