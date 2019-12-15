@@ -50,4 +50,35 @@ tags:
       hexo backup		备份
       ```
 
+5. hexo deploy失败
+
+   ​	问题现象：
+
+   ```
+   PS D:\Blog>  hexo deploy
+   INFO  Deploying: git
+   INFO  Clearing .deploy_git folder...
+   INFO  Copying files from public folder...
+   INFO  Copying files from extend dirs...
+   fatal: in unpopulated submodule '.deploy_git'
+   FATAL Something's wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html
+   Error: Spawn failed
+       at ChildProcess.<anonymous> (D:\Blog\node_modules\hexo-util\lib\spawn.js:52:19)
+       at ChildProcess.emit (events.js:210:5)
+       at ChildProcess.cp.emit (D:\Blog\node_modules\cross-spawn\lib\enoent.js:40:29)
+       at Process.ChildProcess._handle.onexit (internal/child_process.js:272:12)
+   ```
+
+   ​	解决方法： 删除./.deploy_git 文件夹。然后重新deploy
+
+6. hexo backup失败
+
+   PS D:\Blog> git push -u origin master 方式。
+
    
+
+   
+
+   
+
+    
